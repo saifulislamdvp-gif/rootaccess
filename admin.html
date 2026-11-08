@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RootAccess // Admin Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="scanline"></div>
+
+<div id="login-screen">
+  <div class="login-box">
+    <h2>> ADMIN AUTHENTICATION</h2>
+    <p>Enter Root Password to Continue</p>
+    <input type="password" id="pass" placeholder="password: rootaccess123">
+    <button onclick="login()">[ EXECUTE LOGIN ]</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<div id="dashboard" style="display: none;">
+  <header>
+    <h1>> RootAccess Admin</h1>
+    <nav><a href="#" onclick="logout()">[ LOGOUT ]</a></nav>
+  </header>
+  <section>
+    <h2>> System Status</h2>
+    <div class="status-grid">
+      <div class="status-card">CPU <span id="cpu">0%</span></div>
+      <div class="status-card">RAM <span id="ram">0GB</span></div>
+      <div class="status-card">USERS <span id="users">0</span></div>
+      <div class="status-card">FIREWALL <span style="color: #00FF00;">ACTIVE</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>> Live System Log</h2>
+    <div id="syslog" class="terminal-box"></div>
+  </section>
+</div>
+<script src="admin.js"></script>
+</body>
+      </html>
