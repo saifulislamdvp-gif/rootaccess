@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RootAccess | Md Saiful Islam - System Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- EITA NOTUN ADD KORBA -->
+  <div id="loader"><div id="loader-text"></div></div>
+
+  <!-- ER POR THEKE TOMAR AGER SOB CODE -->
+<canvas id="matrix"></canvas>
+  <div class="scanline"></div>
+  
+<header>
+  <h1>> RootAccess</h1>
+  <p class="tagline">The Last Line of Code</p>
+  
+  <nav> <!-- EITA NOTUN -->
+    <a href="#terminal">Terminal</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#os">OS</a>
+    <a href="#bank">Banking</a>
+    <a href="#about">Contact</a>
+    <a href="admin.html">[ ADMIN PORTAL ]</a> <!-- EITA NOTUN LINK -->
+  </nav>
+</header>
+
+  <section id="hero">
+    <h2 id="typing"></h2>
+    <p>I break down OS Kernels, Banking Cores, and Secure Systems. Then I rebuild them better.</p>
+    <button onclick="runCommand('whoami')">Execute Access</button>
+  </section>
+
+  <!-- 1. NEW: TERMINAL SECTION -->
+  <section id="terminal">
+    <h2>> Live Terminal</h2>
+    <div class="terminal-box">
+      <div class="terminal-header">root@rootaccess:~$</div>
+      <div id="terminal-output">
+        <p>Welcome to RootAccess Shell v1.0</p>
+        <p>Type 'help' to see available commands</p>
+      </div>
+      <input type="text" id="terminal-input" placeholder="Type command..." autocomplete="off">
+    </div>
+  </section>
+
+  <!-- 2. NEW: PROJECTS SECTION -->
+  <section id="projects">
+    <h2>> Featured Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>[01] Mini OS Kernel</h3>
+        <p>A custom OS kernel built in C. Handles process scheduling, memory allocation, and system calls.</p>
+        <a href="#">View Code >_</a>
+      </div>
+      <div class="card">
+        <h3>[02] BankSim Core</h3>
+        <p>Banking system simulation with transaction logs, ACID compliance, and fraud detection logic.</p>
+        <a href="#">View Code >_</a>
+      </div>
+      <div class="card">
+        <h3>[03] DataCrash Analyzer</h3>
+        <p>Tool to simulate and recover from database crashes. Focus on rollback and data integrity.</p>
+        <a href="#">View Code >_</a>
+      </div>
+    </div>
+  </section>
+  <!-- NEW: SKILLS SECTION -->
+  <section id="skills">
+    <h2>> Core Skills</h2>
+    <p>Technologies I use to break and build systems.</p>
+    
+    <div class="skill-bar">
+      <div class="skill-info">
+        <span>Operating Systems</span>
+        <span>90%</span>
+      </div>
+      <div class="bar"><div class="progress" style="width: 90%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-info">
+        <span>C / C++ Programming</span>
+        <span>85%</span>
+      </div>
+      <div class="bar"><div class="progress" style="width: 85%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-info">
+        <span>Banking System Architecture</span>
+        <span>80%</span>
+      </div>
+      <div class="bar"><div class="progress" style="width: 80%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-info">
+        <span>Python & Automation</span>
+        <span>75%</span>
+      </div>
+      <div class="bar"><div class="progress" style="width: 75%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-info">
+        <span>Cyber Security</span>
+        <span>70%</span>
+      </div>
+      <div class="bar"><div class="progress" style="width: 70%"></div></div>
+    </div>
+  </section>
+
+  <section id="os">
+    <h2>> Operating System Internals</h2>
+    <p>Deep dive into Process Lifecycle, Memory Paging, and Kernel Modules. With interactive flowcharts.</p>
+  </section>
+
+  <section id="bank">
+    <h2>> Banking System Architecture</h2>
+    <p>From ATM request to Core Server. Understand APIs, Security Layers, and Transaction Rollbacks.</p>
+  </section>
+
+  <section id="about">
+    <h2>> Contact</h2>
+    <p>Md Saiful Islam | System Engineer</p>
+    <p>📨 saiful.islam.dvp@gmail.com</p>
+  </section>
+
+  <footer><p>© 2026 RootAccess | Crafted by Md Saiful Islam</p></footer>
+<script src="script.js"></script>
+</body>
+    </html>
